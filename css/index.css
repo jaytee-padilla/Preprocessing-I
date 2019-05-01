@@ -172,7 +172,7 @@ body header .nav-bar ul li {
 }
 body header .nav-bar ul li a {
   text-decoration: none;
-  color: black;
+  color: teal;
 }
 body main {
   display: flex;
@@ -216,6 +216,9 @@ body main .left-content .primary-content h1 {
   font-weight: 600;
   margin-bottom: 20px;
 }
+body main .left-content .primary-content h3 {
+  color: grey;
+}
 body main .left-content .work-history-section h2 {
   font-size: 1.4rem;
   font-weight: 600;
@@ -243,6 +246,17 @@ body main .right-content {
     width: 100%;
   }
 }
+body main .right-content .details-section ul {
+  list-style-position: inside;
+  list-style-type: none;
+}
+body main .right-content .details-section ul li {
+  line-height: 1.5rem;
+}
+body main .right-content .details-section a {
+  text-decoration: none;
+  color: teal;
+}
 body main .right-content .secondary-content {
   margin-bottom: 25px;
 }
@@ -259,4 +273,15 @@ body main .right-content .skills-section ul {
 }
 body main .right-content .skills-section ul li {
   line-height: 1.5rem;
+}
+body main .right-content .links-section ul {
+  list-style-position: inside;
+  list-style-type: none;
+}
+body main .right-content .links-section ul li {
+  line-height: 1.5rem;
+}
+body main .right-content .links-section a {
+  text-decoration: none;
+  color: teal;
 }
