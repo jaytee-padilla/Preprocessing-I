@@ -67,7 +67,10 @@ body {
 	margin: 0 auto;
 	font-size: 62.5%;
 	font-size: 1.2rem;
-    border: 1px solid red;
+	
+	p {
+		line-height: 1.2rem;
+	}
 
     header {
         margin-bottom: 50px;
@@ -95,16 +98,42 @@ body {
 
 		.hero-section {
 			width: 100%;
-			margin-bottom: 25px;
-			border: 1px solid blue;
+			padding: 0;
+			margin-bottom: 25px;			
+
+			h1 {
+				font-size: 4rem;
+				margin-bottom: 5px;
+			}
+			h2{
+				font-size: 1.5rem;
+			}
 		}
 
         .left-content {
 			width: 75%;
 			padding-right: 25px;
-			border: 1px solid green;
+
+			.primary-content {
+				margin-bottom: 35px;
+
+				h1 {
+					font-size: 2rem;
+					font-weight: 600;
+					margin-bottom: 20px;
+				}
+			}
 
             .work-history-section {
+				h2 {
+					font-size: 1.4rem;
+					font-weight: 600;
+					margin-bottom: 5px;
+				}
+				h3{
+					font-size: 1.4rem;
+					margin-bottom: 15px;
+				}
                 ul {
                     list-style-position: inside;
                     list-style-type: disc;
@@ -115,11 +144,27 @@ body {
         .right-content {
 			width: 25%;
 			word-wrap: break-word;
-			border: 1px solid purple;
-            .skills-section {
+
+			.secondary-content {
+				margin-bottom: 25px;
+				h4 {
+					font-weight: 600;
+					margin-bottom: 5px;
+				}
+
+				p {
+					line-height: 1.3rem;
+				}
+			}
+
+			.skills-section {
                 ul {
 					list-style-position: inside;
+					list-style-type: none;	
 
+					li {
+						line-height: 1.5rem;
+					}
                 }
             }
         }
