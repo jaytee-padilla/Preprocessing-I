@@ -32,9 +32,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+// ol, ul {
+// 	list-style: none;
+// }
 blockquote, q {
 	quotes: none;
 }
@@ -55,5 +55,52 @@ table {
 
 html, body {
     height: 100%;
+}
+
+/* My code below this line */
+body {
+	font-family: 'Nunito Sans', sans-serif;
+	width: 100%;
+	max-width: 900px;
+	height: auto;
+	padding: 25px 0;
+	margin: 0 auto;
+
+	header {
+		margin-bottom: 50px;
+
+		.nav-bar {
+			ul {
+				display: flex;
+				list-style-type: none;				
+
+				li {
+					margin-right: 10px;
+				
+					a {
+						text-decoration: none;
+						color: black;
+					}
+				}
+			}
+		}
+	}
+	
+	main {
+		display: flex;
+
+		.work-history-section {
+			ul {
+				list-style-position: inside;
+				list-style-type: disc;
+			}
+		}
+
+		.skills-section {
+			ul {
+				list-style-position: inside;
+			}
+		}
+	}
 }
 
