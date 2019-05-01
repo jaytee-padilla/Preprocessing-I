@@ -59,48 +59,70 @@ html, body {
 
 /* My code below this line */
 body {
-	font-family: 'Nunito Sans', sans-serif;
-	width: 100%;
-	max-width: 900px;
-	height: auto;
-	padding: 25px 0;
+    font-family: 'Nunito Sans', sans-serif;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    padding: 25px 0;
 	margin: 0 auto;
+	font-size: 62.5%;
+	font-size: 1.2rem;
+    border: 1px solid red;
 
-	header {
-		margin-bottom: 50px;
+    header {
+        margin-bottom: 50px;
 
-		.nav-bar {
-			ul {
-				display: flex;
-				list-style-type: none;				
+        .nav-bar {
+            ul {
+                display: flex;
+                list-style-type: none;
 
-				li {
-					margin-right: 10px;
-				
-					a {
-						text-decoration: none;
-						color: black;
-					}
-				}
-			}
-		}
-	}
-	
-	main {
+                li {
+                    margin-right: 10px;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
 		display: flex;
+		flex-wrap: wrap;
 
-		.work-history-section {
-			ul {
-				list-style-position: inside;
-				list-style-type: disc;
-			}
+		.hero-section {
+			width: 100%;
+			margin-bottom: 25px;
+			border: 1px solid blue;
 		}
 
-		.skills-section {
-			ul {
-				list-style-position: inside;
-			}
-		}
-	}
+        .left-content {
+			width: 75%;
+			padding-right: 25px;
+			border: 1px solid green;
+
+            .work-history-section {
+                ul {
+                    list-style-position: inside;
+                    list-style-type: disc;
+                }
+            }
+        }
+
+        .right-content {
+			width: 25%;
+			word-wrap: break-word;
+			border: 1px solid purple;
+            .skills-section {
+                ul {
+					list-style-position: inside;
+
+                }
+            }
+        }
+    }
 }
 
