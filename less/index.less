@@ -58,8 +58,13 @@ html, body {
 }
 
 /* My code below this line */
+// variables
+@color: black;
+@font-stack: 'Nunito Sans', sans-serif;
+
+
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: @font-stack;
     width: 100%;
     max-width: 900px;
     height: auto;
@@ -67,6 +72,20 @@ body {
 	margin: 0 auto;
 	font-size: 62.5%;
 	font-size: 1.2rem;
+
+	@media only screen and (max-width: 500px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	@media only screen and (max-device-width: 500px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
 	
 	p {
 		line-height: 1.2rem;
@@ -85,7 +104,7 @@ body {
 
                     a {
                         text-decoration: none;
-                        color: black;
+                        color: @color;
                     }
                 }
             }
@@ -95,6 +114,18 @@ body {
     main {
 		display: flex;
 		flex-wrap: wrap;
+
+		@media only screen and (max-width: 500px) {
+			width: 100%;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		@media only screen and (max-device-width: 500px) {
+			width: 100%;
+			flex-direction: column;
+			align-items: center;
+		}
 
 		.hero-section {
 			width: 100%;
@@ -144,6 +175,13 @@ body {
         .right-content {
 			width: 25%;
 			word-wrap: break-word;
+
+			@media only screen and (max-width: 500px) {
+				width: 100%;
+			}
+			@media only screen and (max-device-width: 500px) {
+				width: 100%;
+			}
 
 			.secondary-content {
 				margin-bottom: 25px;
